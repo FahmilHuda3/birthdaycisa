@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f4">
+<title>For My Favorite Person ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f3a8bc;--rose:#d96d8d;--ink:#49343d;--cream:#fff8f5;--muted:#947b83;--line:#f1dce3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}button,input,textarea{font:inherit}button{cursor:pointer}.hidden{display:none!important}.serif{font-family:'Playfair Display',serif}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;color:var(--rose);font-weight:700}.section{padding:90px 20px;max-width:1050px;margin:auto}.section h2{font:600 clamp(2.1rem,5vw,3.4rem) 'Playfair Display',serif;margin:12px 0}.intro{max-width:600px;line-height:1.8;color:var(--muted)}.center{text-align:center}.btn{border:0;border-radius:999px;padding:14px 24px;background:var(--rose);color:white;font-weight:700;box-shadow:0 9px 25px #d96d8d33;transition:.25s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #d96d8d55}.btn.secondary{background:white;color:var(--rose);border:1px solid var(--line);box-shadow:none}.heart{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:floatUp linear forwards;opacity:.6}@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}} 
+#lock{min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 20% 20%,#ffe0e9,transparent 35%),radial-gradient(circle at 80% 80%,#f9d7e1,transparent 35%),#fff8f5;position:relative;overflow:hidden}.lock-card{width:min(100%,410px);text-align:center;padding:38px 26px;background:#ffffffc9;backdrop-filter:blur(12px);border:1px solid white;border-radius:30px;box-shadow:0 25px 80px #b96c8420;position:relative;z-index:1}.lock-icon{font-size:3.2rem;animation:pulse 2s infinite}.lock-card h1{font:600 2.4rem 'Playfair Display',serif;margin:12px 0}.lock-card p{color:var(--muted);line-height:1.7}.pin-dots{display:flex;justify-content:center;gap:13px;margin:26px 0}.pin-dot{width:13px;height:13px;border:1.5px solid #dba1b2;border-radius:50%;transition:.2s}.pin-dot.filled{background:var(--rose);transform:scale(1.15)}.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:270px;margin:auto}.key{border:0;background:white;border-radius:15px;padding:15px;color:var(--ink);font-size:1.1rem;box-shadow:0 3px 12px #8e506011;transition:.15s}.key:hover{background:#fff0f4;transform:scale(1.03)}.key:active{transform:scale(.96)}#pinMsg{min-height:24px;font-size:.85rem;color:var(--rose);margin-top:14px}
+#app{display:none}.hero{min-height:95svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:65px 20px;position:relative;overflow:hidden;background:linear-gradient(150deg,#fff6f4,#ffe5ed 60%,#fff8f5)}.hero:before,.hero:after{content:'♡';position:absolute;color:#e9a3b8;opacity:.35;font-size:clamp(7rem,20vw,17rem);animation:slowSpin 18s linear infinite}.hero:before{left:-3%;top:3%}.hero:after{right:-2%;bottom:-10%;animation-direction:reverse}@keyframes slowSpin{to{transform:rotate(360deg)}}.hero-content{position:relative;z-index:1;max-width:760px}.hero h1{font:600 clamp(3rem,8vw,6.4rem)/1.06 'Playfair Display',serif;margin:18px 0}.hero h1 em{color:var(--rose)}.hero p{max-width:540px;margin:0 auto 28px;color:#8b6c78;line-height:1.9}.cake{font-size:4rem;display:inline-block;animation:bounce 2s infinite}@keyframes bounce{50%{transform:translateY(-9px) rotate(3deg)}}.scroll-note{margin-top:35px;color:var(--muted);font-size:.8rem;letter-spacing:.1em}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:620px;margin:30px auto}.timebox{padding:20px 8px;border:1px solid var(--line);background:#fff;border-radius:20px}.timebox strong{display:block;font:600 clamp(1.8rem,5vw,2.8rem) 'Playfair Display',serif;color:var(--rose)}.timebox span{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.timeline{position:relative;max-width:780px;margin:50px auto 0}.timeline:before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--line);transform:translateX(-50%)}.memory{width:50%;padding:0 34px 42px;position:relative;opacity:0;transform:translateY(25px);transition:.7s}.memory.show{opacity:1;transform:translateY(0)}.memory:nth-child(odd){margin-right:auto;text-align:right}.memory:nth-child(even){margin-left:50%;text-align:left}.memory:after{content:'♡';position:absolute;top:7px;right:-12px;color:var(--rose);font-size:1.2rem;background:var(--cream);padding:0 2px}.memory:nth-child(even):after{right:auto;left:-12px}.memory img{width:min(100%,310px);height:220px;object-fit:cover;border-radius:14px;padding:7px;background:white;box-shadow:0 12px 35px #9e62731b;transition:transform .6s}.memory:nth-child(odd) img{transform:rotate(-3deg)}.memory:nth-child(even) img{transform:rotate(3deg)}.memory img:hover{transform:rotate(0) scale(1.04)}.memory time{display:block;color:var(--rose);font-size:.78rem;font-weight:700;letter-spacing:.08em;margin:14px 0 7px}.memory h3{font:600 1.35rem 'Playfair Display',serif;margin:0 0 8px}.memory p{font-size:.9rem;color:var(--muted);line-height:1.7;margin:0}
+.gallery-wrap{overflow:hidden;padding:35px 0 50px}.gallery-track{display:flex;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap}.polaroid{width:min(42vw,220px);min-width:140px;padding:10px 10px 18px;background:#fff;box-shadow:0 14px 35px #9e62731b;border-radius:5px;transition:transform .5s;animation:orbit 7s ease-in-out infinite}.polaroid:nth-child(2n){animation-delay:-2s}.polaroid:nth-child(3n){animation-delay:-4s}.polaroid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}.polaroid figcaption{text-align:center;font:italic 1rem 'Playfair Display',serif;padding-top:12px;color:#9d6476}@keyframes orbit{0%,100%{transform:rotate(-5deg) translateY(0)}25%{transform:rotate(3deg) translateY(-12px)}50%{transform:rotate(6deg) translateY(3px)}75%{transform:rotate(-2deg) translateY(-8px)}}.gallery-track:hover .polaroid{animation-play-state:paused}.letter{background:white;border:1px solid var(--line);border-radius:24px;padding:clamp(24px,6vw,55px);max-width:780px;margin:35px auto 0;box-shadow:0 20px 60px #9e62730d;position:relative}.letter:before{content:'✦';position:absolute;top:20px;right:24px;color:var(--pink);font-size:1.6rem}.letter p{line-height:2;color:#765e67;white-space:pre-line}.letter .sign{font:italic 1.5rem 'Playfair Display',serif;color:var(--rose);margin-top:28px}
+.form-card{max-width:700px;margin:35px auto 0;background:#fff;border:1px solid var(--line);padding:clamp(24px,5vw,42px);border-radius:25px}.field{margin:20px 0}.field label{display:block;font-weight:700;margin-bottom:9px;font-size:.92rem}.field input,.field textarea{width:100%;border:1px solid #ead4dc;border-radius:13px;padding:14px;background:#fffafc;color:var(--ink);outline:none}.field input:focus,.field textarea:focus{border-color:var(--rose);box-shadow:0 0 0 3px #f3a8bc30}.field textarea{min-height:125px;resize:vertical;line-height:1.6}.small-note{font-size:.8rem;color:var(--muted);line-height:1.6}.footer{text-align:center;padding:35px 20px 50px;color:var(--muted);font-size:.85rem}.footer span{color:var(--rose)}.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.show{opacity:1;transform:translateY(0)}@media(max-width:620px){.section{padding:68px 19px}.timeline:before{left:8px}.memory,.memory:nth-child(odd),.memory:nth-child(even){width:100%;margin:0;padding:0 0 36px 32px;text-align:left}.memory:after,.memory:nth-child(even):after{left:-1px;right:auto}.memory img{height:220px;width:100%;max-width:360px}.countdown{gap:7px}.timebox{padding:16px 3px}.gallery-track{gap:14px}.polaroid{width:42vw;min-width:0}.hero{min-height:90svh}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* Kejutan bunga setelah PIN benar */
+#bloomScreen{min-height:100svh;position:fixed;inset:0;z-index:50;display:grid;place-items:center;overflow:hidden;padding:24px;background:radial-gradient(circle at 50% 35%,#3d263d,#171522 72%);color:#fff7fb;text-align:center;opacity:0;visibility:hidden;transition:opacity .8s ease,visibility .8s}
+#bloomScreen.active{opacity:1;visibility:visible}
+/* Animasi ditahan sampai PIN benar, supaya tidak selesai saat layar masih tersembunyi */
+#bloomScreen:before,#bloomScreen:after,.flower-stem,.flower-leaf,.flower-head,.petal,.flower-center,.bloom-content h2,.bloom-content p,#openSurprise{animation-play-state:paused}
+#bloomScreen.active:before,#bloomScreen.active:after,#bloomScreen.active .flower-stem,#bloomScreen.active .flower-leaf,#bloomScreen.active .flower-head,#bloomScreen.active .petal,#bloomScreen.active .flower-center,#bloomScreen.active .bloom-content h2,#bloomScreen.active .bloom-content p,#bloomScreen.active #openSurprise{animation-play-state:running}
+#bloomScreen:before,#bloomScreen:after{content:'✦';position:absolute;color:#f8c9dc;opacity:.55;animation:twinkle 2.8s ease-in-out infinite alternate}
+#bloomScreen:before{top:13%;left:18%;font-size:1.5rem}#bloomScreen:after{right:17%;top:24%;font-size:1rem;animation-delay:1s}
+.bloom-content{position:relative;z-index:1;display:flex;align-items:center;flex-direction:column;max-width:560px}
+.flower-scene{height:290px;width:250px;position:relative;margin:0 auto 12px}
+.flower-stem{position:absolute;width:5px;height:0;background:linear-gradient(#83b987,#3e805c);bottom:18px;left:123px;border-radius:8px;animation:growStem 1.4s .25s ease-out forwards}
+.flower-leaf{position:absolute;width:45px;height:22px;background:#6eaa7b;bottom:85px;left:85px;border-radius:100% 0 100% 0;transform:scale(0) rotate(-20deg);transform-origin:right center;animation:leafGrow .65s 1.25s ease-out forwards}
+.flower-leaf.right{left:126px;bottom:120px;border-radius:0 100% 0 100%;transform-origin:left center;animation-delay:1.45s}
+.flower-head{position:absolute;left:50%;top:63px;width:150px;height:150px;transform:translateX(-50%) scale(.05);animation:headPop .7s 1.7s ease-out forwards}
+.petal{position:absolute;left:50%;top:50%;width:47px;height:76px;margin:-70px 0 0 -23.5px;transform-origin:50% 70px;transform:rotate(var(--angle)) scaleY(.05);border-radius:55% 55% 45% 45%;background:linear-gradient(160deg,#ffe1ed,#ef8fb6 70%,#d65b91);box-shadow:inset -5px -5px 10px #b94e8126;animation:petalOpen .8s calc(1.85s + var(--delay)) cubic-bezier(.2,.8,.2,1) forwards}
+.flower-center{position:absolute;left:50%;top:50%;width:34px;height:34px;margin:-17px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff1a7,#e8a94b 70%);box-shadow:0 0 24px #ffd77b77;transform:scale(0);animation:centerPop .5s 2.8s ease-out forwards}
+.bloom-content h2{font:italic 600 clamp(2rem,7vw,3.1rem) 'Playfair Display',serif;margin:0 0 12px;opacity:0;animation:fadeInUp .8s 2.8s forwards}
+.bloom-content p{line-height:1.8;color:#e9cedd;margin:0 auto 24px;opacity:0;animation:fadeInUp .8s 3.15s forwards}
+#openSurprise{opacity:0;animation:fadeInUp .8s 3.55s forwards;background:#f3a8bc;color:#442637}
+@keyframes growStem{to{height:190px}}@keyframes leafGrow{to{transform:scale(1) rotate(-20deg)}}@keyframes headPop{to{transform:translateX(-50%) scale(1)}}@keyframes petalOpen{to{transform:rotate(var(--angle)) scaleY(1)}}@keyframes centerPop{to{transform:scale(1)}}@keyframes fadeInUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@keyframes twinkle{to{transform:translateY(-8px) scale(1.25);opacity:1}}
+@media(prefers-reduced-motion:reduce){.flower-stem,.flower-leaf,.flower-head,.petal,.flower-center,.bloom-content h2,.bloom-content p,#openSurprise{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important}}
+
+</style>
+</head>
+<body>
+<section id="lock">
+  <div class="lock-card">
+    <div class="lock-icon">💌</div>
+    <div class="eyebrow">a little surprise for you</div>
+    <h1 class="serif">Just for you.</h1>
+    <p>Ada sesuatu yang aku siapkan khusus buat kamu.<br>Masukkan 6 angka rahasia kita, ya ♡</p>
+    <div class="pin-dots" id="pinDots"><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i></div>
+    <div class="keypad" id="keypad">
+      <button class="key" data-n="1">1</button><button class="key" data-n="2">2</button><button class="key" data-n="3">3</button>
+      <button class="key" data-n="4">4</button><button class="key" data-n="5">5</button><button class="key" data-n="6">6</button>
+      <button class="key" data-n="7">7</button><button class="key" data-n="8">8</button><button class="key" data-n="9">9</button>
+      <button class="key" data-n="clear">⌫</button><button class="key" data-n="0">0</button><button class="key" data-n="enter">↵</button>
+    </div><div id="pinMsg" aria-live="polite"></div>
+    <div class="small-note">Made with love, only for you ♡</div>
+  </div>
+</section>
+<section id="bloomScreen" aria-label="Kejutan bunga" aria-hidden="true">
+  <div class="bloom-content">
+    <div class="flower-scene" aria-hidden="true">
+      <div class="flower-stem"></div><div class="flower-leaf"></div><div class="flower-leaf right"></div>
+      <div class="flower-head">
+        <span class="petal" style="--angle:0deg;--delay:0s"></span><span class="petal" style="--angle:45deg;--delay:.08s"></span><span class="petal" style="--angle:90deg;--delay:.16s"></span><span class="petal" style="--angle:135deg;--delay:.24s"></span><span class="petal" style="--angle:180deg;--delay:.32s"></span><span class="petal" style="--angle:225deg;--delay:.4s"></span><span class="petal" style="--angle:270deg;--delay:.48s"></span><span class="petal" style="--angle:315deg;--delay:.56s"></span><span class="flower-center"></span>
+      </div>
+    </div>
+    <h2>A little flower for you ♡</h2>
+    <p>Untuk perempuan yang membuat hari-hariku terasa lebih indah.<br>Semoga di umur barumu, hal-hal baik terus tumbuh di hidupmu.</p>
+    <button class="btn" id="openSurprise">Open your birthday surprise ♡</button>
+  </div>
+</section>
+
+<main id="app">
+  <header class="hero">
+    <div class="hero-content">
+      <div class="cake">🎂</div>
+      <div class="eyebrow">to my favorite human</div>
+      <h1>Happy Birthday,<br><em id="herNameHero">my love</em> ♡</h1>
+      <p>Hari ini dunia merayakan seseorang yang sangat berarti buatku. Semoga halaman kecil ini bisa bikin kamu tersenyum, seperti kamu yang selalu punya cara untuk bikin hariku lebih indah.</p>
+      <button class="btn" onclick="document.querySelector('#journey').scrollIntoView({behavior:'smooth'})">Buka cerita kita ↓</button>
+      <div class="scroll-note">A LITTLE WEBSITE, A LOT OF LOVE</div>
+    </div>
+  </header>
+  <section class="section center reveal" id="journey">
+    <div class="eyebrow">chapter one</div><h2>Look how far we've come</h2>
+    <p class="intro" style="margin:0 auto">Dari momen sederhana sampai kenangan yang ingin kita simpan selamanya. Ini beberapa halaman kecil dari cerita kita.</p>
+    <div class="timeline" id="timeline"></div>
+  </section>
+  <section class="section center reveal">
+    <div class="eyebrow">something beautiful is coming</div><h2>Our first anniversary</h2>
+    <p class="intro" style="margin:0 auto">Menuju satu tahun sejak kita memilih untuk berjalan bersama. Semoga masih banyak tanggal yang bisa kita rayakan, ya.</p>
+    <div class="countdown" aria-label="Countdown anniversary">
+      <div class="timebox"><strong id="days">000</strong><span>Hari</span></div><div class="timebox"><strong id="hours">00</strong><span>Jam</span></div><div class="timebox"><strong id="minutes">00</strong><span>Menit</span></div><div class="timebox"><strong id="seconds">00</strong><span>Detik</span></div>
+    </div>
+    <div class="eyebrow">19 March 2027 · one year of us ♡</div>
+  </section>
+  <section class="section center reveal" id="gallery">
+    <div class="eyebrow">chapter two</div><h2>A little gallery of us</h2>
+    <p class="intro" style="margin:0 auto">Kalau bahagia bisa disimpan dalam foto, mungkin inilah beberapa bentuk favoritku. Arahkan kursor atau sentuh fotonya untuk menghentikan gerakannya ♡</p>
+    <div class="gallery-wrap"><div class="gallery-track" id="galleryTrack"></div></div>
+  </section>
+  <section class="section reveal" id="letterSection">
+    <div class="center"><div class="eyebrow">chapter three</div><h2>A letter from my heart</h2><p class="intro" style="margin:0 auto">Ada hal-hal yang mungkin belum selalu bisa aku ucapkan langsung.</p></div>
+    <article class="letter"><div class="eyebrow">for my love, on your birthday</div><p id="letterText"></p><div class="sign">With all my love, <span id="myNameSign">your person</span> ♡</div></article>
+  </section>
+  <section class="section reveal" id="wishes">
+    <div class="center"><div class="eyebrow">one last little thing</div><h2>Your wishes, your dreams</h2><p class="intro" style="margin:0 auto">Di umur 19 tahun ini, aku pengin tahu apa yang kamu harapkan untuk dirimu, dan apa yang kamu harapkan untuk aku. Tulis semuanya, ya. Aku ingin mendengarnya.</p></div>
+    <form class="form-card" id="wishForm">
+      <div class="field"><label for="wishName">Nama kamu ♡</label><input id="wishName" name="nama" placeholder="Nama panggilanmu" required></div>
+      <div class="field"><label for="wishSelf">Harapan dan impianmu di umur 19 tahun</label><textarea id="wishSelf" name="harapan_umur_19" placeholder="Semoga tahun ini aku bisa..." required></textarea></div>
+      <div class="field"><label for="wishUs">Harapan kamu untuk aku dan hubungan kita</label><textarea id="wishUs" name="harapan_untuk_kita" placeholder="Aku berharap kamu..." required></textarea></div>
+      <div class="field"><label for="wishFuture">Harapan untuk aku ke depannya</label><textarea id="wishFuture" name="harapan_untuk_kamu" placeholder="Aku ingin kamu..." required></textarea></div>
+      <div class="field"><label for="wishNote">Pesan kecil buat aku (opsional)</label><textarea id="wishNote" name="pesan_tambahan" placeholder="Satu hal yang ingin kamu bilang..."></textarea></div>
+      <button class="btn" type="submit" style="width:100%">Simpan harapanku ♡</button>
+      <p class="small-note" id="formNote">Catatan: tombol ini bisa mengirim jawaban ke emailmu setelah kamu mengatur alamat email di file index.html. Petunjuk ada di README.</p>
+    </form>
+  </section>
+  <footer class="footer">Made with <span>♥</span>, just for you. <br>Semoga cerita kita punya banyak halaman berikutnya.</footer>
+</main>
+<script>
+/* ===================== PERSONALISASI WEBSITE =====================
+   1) PIN: ubah SECRET_PIN menjadi 6 digit rahasia kalian.
+   2) Nama kalian: ubah HER_NAME dan MY_NAME.
+   3) Tanggal hubungan: isi tanggal dan cerita pada JOURNEY.
+   4) Foto: taruh foto sendiri di folder photos/ lalu ubah nama file di bawah.
+   5) Form: isi FORM_ENDPOINT jika ingin jawaban dikirim online (lihat README).
+=================================================================== */
+const SECRET_PIN = "190327"; // GANTI dengan PIN 6 digit kalian
+const HER_NAME = "sayang";   // Nama/panggilan pacar
+const MY_NAME = "your person"; // Nama/panggilan kamu
+const ANNIVERSARY = "2027-03-19T00:00:00+07:00";
+const FORM_ENDPOINT = ""; // Opsional: URL endpoint FormSubmit/Formspree, lihat README
+
+const JOURNEY = [
+  {date:"19 Maret 2026", title:"The day our story began", text:"Hari ketika cerita kita dimulai. Sederhana, tapi jadi salah satu tanggal yang paling berarti buatku.", photo:"photos/foto1.jpg"},
+  {date:"Tambahkan tanggal", title:"A memory I keep close", text:"Tulis cerita singkat tentang momen pertama yang ingin selalu kamu ingat.", photo:"photos/foto2.jpg"},
+  {date:"Tambahkan tanggal", title:"One of my favorite days", text:"Ceritakan perjalanan, tawa, atau hal kecil yang membuat hari itu istimewa.", photo:"photos/foto3.jpg"}
+];
+const GALLERY = [
+  {photo:"photos/foto4.jpg", caption:"my favorite smile"},
+  {photo:"photos/foto5.jpg", caption:"a day with you"},
+  {photo:"photos/foto6.jpg", caption:"little happy things"},
+  {photo:"photos/foto7.jpg", caption:"my safe place"},
+  {photo:"photos/foto8.jpg", caption:"more memories, please"},
+  {photo:"photos/foto9.jpg", caption:"always you"}
+];
+const LOVE_LETTER = `Selamat ulang tahun, sayangku. ♡
+
+Hari ini adalah hari lahir seseorang yang kehadirannya punya arti besar dalam hidupku. Aku harap di umur 19 tahun ini, kamu semakin dekat dengan semua hal baik yang kamu impikan. Semoga kamu selalu diberi kesehatan, hati yang tenang, keberanian untuk mencoba hal-hal baru, dan kekuatan saat hari-hari terasa tidak mudah.
+
+Aku mungkin belum selalu jadi pasangan yang sempurna. Ada kalanya aku salah bicara, kurang peka, atau belum bisa memahami apa yang kamu rasakan. Tapi aku ingin terus belajar menjadi seseorang yang bisa kamu percaya, tempat kamu bercerita tanpa takut dihakimi, dan seseorang yang tetap berusaha ada saat kamu membutuhkan dukungan.
+
+Terima kasih karena sudah menjadi bagian dari hari-hariku. Terima kasih untuk tawa, cerita, perhatian kecil, waktu yang kamu luangkan, dan semua kenangan yang mungkin terlihat biasa bagi orang lain tetapi berarti banyak buatku. Aku suka bagaimana hal sederhana bisa terasa istimewa ketika aku menjalaninya bersamamu.
+
+Di umur yang baru ini, jangan lupa berbaik hati kepada dirimu sendiri. Kamu tidak harus selalu kuat, tidak harus selalu punya jawaban, dan tidak harus membandingkan perjalananmu dengan siapa pun. Pelan-pelan saja. Aku akan ikut bahagia melihatmu tumbuh, mencoba, belajar, dan menemukan hal-hal yang membuatmu merasa hidup.
+
+Untuk hubungan kita, aku berharap kita terus memilih untuk saling mendengar, jujur, menghargai, dan memperbaiki keadaan saat ada yang tidak baik-baik saja. Aku tidak bisa menjanjikan bahwa setiap hari akan mudah, tetapi aku ingin menjalani hari-hari itu dengan komunikasi, usaha, dan kasih sayang yang nyata.
+
+Semoga ulang tahun ini menjadi awal dari banyak hal baik. Semoga harapan yang kamu simpan satu per satu menemukan jalannya. Dan semoga nanti, ketika kita melihat kembali foto-foto ini, kita bisa tersenyum karena ternyata kita sudah melewati begitu banyak hal bersama.
+
+Happy 19th birthday, my love. Teruslah jadi dirimu sendiri—seseorang yang berharga, yang layak dicintai, dan yang pantas mendapatkan hal-hal baik. Aku bersyukur bisa mengenalmu dan menjadi bagian dari ceritamu.
+
+I love you, today and in all the little tomorrows. ♡`;
+document.getElementById("herNameHero").textContent = HER_NAME;
+document.getElementById("myNameSign").textContent = MY_NAME;
+document.getElementById("letterText").textContent = LOVE_LETTER;
+
+let pin = "";
+const dots = [...document.querySelectorAll(".pin-dot")];
+const pinMsg = document.getElementById("pinMsg");
+function updateDots(){dots.forEach((d,i)=>d.classList.toggle("filled",i<pin.length))}
+function enterPin(){if(pin===SECRET_PIN){
+  const bloom=document.getElementById("bloomScreen");
+  // Reset setiap animasi secara eksplisit agar mulai dari awal saat PIN benar.
+  bloom.querySelectorAll(".flower-stem,.flower-leaf,.flower-head,.petal,.flower-center,.bloom-content h2,.bloom-content p,#openSurprise").forEach(el=>{el.style.animation="none";});
+  void bloom.offsetWidth; // paksa browser menerapkan reset animasi
+  bloom.querySelectorAll(".flower-stem,.flower-leaf,.flower-head,.petal,.flower-center,.bloom-content h2,.bloom-content p,#openSurprise").forEach(el=>{el.style.removeProperty("animation");});
+  document.getElementById("lock").classList.add("hidden");
+  bloom.classList.add("active");bloom.setAttribute("aria-hidden","false");
+}else{pinMsg.textContent="Hmm, belum tepat. Coba lagi ya, sayang ♡";pin="";updateDots()}}
+document.getElementById("openSurprise").addEventListener("click",()=>{document.getElementById("bloomScreen").classList.remove("active");document.getElementById("bloomScreen").setAttribute("aria-hidden","true");document.getElementById("app").style.display="block";window.scrollTo(0,0);startHearts();setTimeout(()=>observer.observeAll?.(),100)});
+document.getElementById("keypad").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const n=b.dataset.n;if(n==="clear")pin=pin.slice(0,-1);else if(n==="enter"){enterPin();return}else if(pin.length<6)pin+=n;updateDots();if(pin.length===6)setTimeout(enterPin,180)});
+document.addEventListener("keydown",e=>{if(document.getElementById("lock").classList.contains("hidden"))return;if(/^\d$/.test(e.key)&&pin.length<6){pin+=e.key;updateDots();if(pin.length===6)setTimeout(enterPin,180)}if(e.key==="Backspace"){pin=pin.slice(0,-1);updateDots()}if(e.key==="Enter")enterPin()});
+
+const timeline=document.getElementById("timeline");
+JOURNEY.forEach((m,i)=>{const el=document.createElement("article");el.className="memory";el.innerHTML=`<img src="${m.photo}" alt="Kenangan ${i+1}" onerror="this.onerror=null;this.src='https://placehold.co/700x500/ffe8ef/9c526d?text=Tambahkan+Foto+${i+1}'"><time>${m.date}</time><h3>${m.title}</h3><p>${m.text}</p>`;timeline.appendChild(el)});
+const gallery=document.getElementById("galleryTrack");
+GALLERY.forEach((g,i)=>{const fig=document.createElement("figure");fig.className="polaroid";fig.innerHTML=`<img src="${g.photo}" alt="Foto galeri ${i+1}" onerror="this.onerror=null;this.src='https://placehold.co/500x650/ffe8ef/9c526d?text=Foto+${i+1}'"><figcaption>${g.caption}</figcaption>`;gallery.appendChild(fig)});
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add("show")}),{threshold:.12});
+function observeAll(){document.querySelectorAll(".reveal,.memory").forEach(el=>observer.observe(el))}observer.observeAll=observeAll;observeAll();
+function countdown(){let diff=new Date(ANNIVERSARY).getTime()-Date.now();if(diff<=0){document.getElementById("days").textContent="♡";document.getElementById("hours").textContent="♡";document.getElementById("minutes").textContent="♡";document.getElementById("seconds").textContent="♡";return}const d=Math.floor(diff/86400000);diff%=86400000;const h=Math.floor(diff/3600000);diff%=3600000;const m=Math.floor(diff/60000);const s=Math.floor(diff%60000/1000);document.getElementById("days").textContent=String(d).padStart(3,"0");document.getElementById("hours").textContent=String(h).padStart(2,"0");document.getElementById("minutes").textContent=String(m).padStart(2,"0");document.getElementById("seconds").textContent=String(s).padStart(2,"0")}countdown();setInterval(countdown,1000);
+function startHearts(){setInterval(()=>{if(document.hidden)return;const h=document.createElement("span");h.className="heart";h.textContent=["♡","♥","✦","💕"][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+"vw";h.style.fontSize=(14+Math.random()*20)+"px";h.style.animationDuration=(7+Math.random()*7)+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),15000)},650)}
+document.getElementById("wishForm").addEventListener("submit",async e=>{e.preventDefault();const form=e.currentTarget;const data=Object.fromEntries(new FormData(form).entries());if(FORM_ENDPOINT){try{const response=await fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)});if(!response.ok)throw new Error("submit failed");document.getElementById("formNote").textContent="Harapanmu sudah terkirim. Terima kasih sudah berbagi isi hatimu denganku ♡";form.reset()}catch(err){document.getElementById("formNote").textContent="Belum berhasil mengirim. Periksa koneksi atau endpoint formulir, lalu coba lagi."}}else{const text=`Harapan dari ${data.nama}\n\nHarapan umur 19:\n${data.harapan_umur_19}\n\nHarapan untuk kita:\n${data.harapan_untuk_kita}\n\nHarapan untukku:\n${data.harapan_untuk_kamu}\n\nPesan tambahan:\n${data.pesan_tambahan||"-"}`;const blob=new Blob([text],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="harapan-untuk-kita.txt";a.click();URL.revokeObjectURL(url);document.getElementById("formNote").textContent="Jawaban diunduh sebagai file .txt di perangkat ini. Untuk menerima jawaban langsung dari pacarmu secara online, atur FORM_ENDPOINT sesuai README.";form.reset()}});
+</script>
+</body>
+</html>

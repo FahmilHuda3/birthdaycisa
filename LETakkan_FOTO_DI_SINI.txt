@@ -1,0 +1,1 @@
+Taruh foto kalian di folder ini. Gunakan foto1.jpg sampai foto9.jpg, atau sesuaikan nama file di index.html.
