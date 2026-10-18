@@ -68,7 +68,7 @@
       </div>
     </div>
     <h2>A little flower for you ♡</h2>
-    <p>Untuk perempuan yang membuat hari-hariku terasa lebih indah.<br>Semoga di umur barumu, hal-hal baik terus tumbuh di hidupmu.</p>
+    <p>Untuk perempuan yang membuat hari-hariku terasa lebih indah.<br>Semoga di umur barumu, hal-hal baik senentiasa menyertai hidupmu.</p>
     <button class="btn" id="openSurprise">Open your birthday surprise ♡</button>
   </div>
 </section>
@@ -99,7 +99,7 @@
   </section>
   <section class="section center reveal" id="gallery">
     <div class="eyebrow">chapter two</div><h2>A little gallery of us</h2>
-    <p class="intro" style="margin:0 auto">Kalau bahagia bisa disimpan dalam foto, mungkin inilah beberapa bentuk favoritku. Arahkan kursor atau sentuh fotonya untuk menghentikan gerakannya ♡</p>
+    <p class="intro" style="margin:0 auto">Kalau bahagia bisa disimpan dalam foto, mungkin inilah beberapa bentuk favoritku. </p>
     <div class="gallery-wrap"><div class="gallery-track" id="galleryTrack"></div></div>
   </section>
   <section class="section reveal" id="letterSection">
@@ -109,7 +109,6 @@
   <section class="section reveal" id="wishes">
     <div class="center"><div class="eyebrow">one last little thing</div><h2>Your wishes, your dreams</h2><p class="intro" style="margin:0 auto">Di umur 19 tahun ini, aku pengin tahu apa yang kamu harapkan untuk dirimu, dan apa yang kamu harapkan untuk aku. Tulis semuanya, ya. Aku ingin mendengarnya.</p></div>
     <form class="form-card" id="wishForm">
-      <div class="field"><label for="wishName">Nama kamu ♡</label><input id="wishName" name="nama" placeholder="Nama panggilanmu" required></div>
       <div class="field"><label for="wishSelf">Harapan dan impianmu di umur 19 tahun</label><textarea id="wishSelf" name="harapan_umur_19" placeholder="Semoga tahun ini aku bisa..." required></textarea></div>
       <div class="field"><label for="wishUs">Harapan kamu untuk aku dan hubungan kita</label><textarea id="wishUs" name="harapan_untuk_kita" placeholder="Aku berharap kamu..." required></textarea></div>
       <div class="field"><label for="wishFuture">Harapan untuk aku ke depannya</label><textarea id="wishFuture" name="harapan_untuk_kamu" placeholder="Aku ingin kamu..." required></textarea></div>
@@ -128,9 +127,9 @@
    4) Foto: taruh foto sendiri di folder photos/ lalu ubah nama file di bawah.
    5) Form: isi FORM_ENDPOINT jika ingin jawaban dikirim online (lihat README).
 =================================================================== */
-const SECRET_PIN = "190327"; // GANTI dengan PIN 6 digit kalian
-const HER_NAME = "sayang";   // Nama/panggilan pacar
-const MY_NAME = "your person"; // Nama/panggilan kamu
+const SECRET_PIN = "191007"; // GANTI dengan PIN 6 digit kalian
+const HER_NAME = "Saniaa";   // Nama/panggilan pacar
+const MY_NAME = "Fahmii"; // Nama/panggilan kamu
 const ANNIVERSARY = "2027-03-19T00:00:00+07:00";
 const FORM_ENDPOINT = ""; // Opsional: URL endpoint FormSubmit/Formspree, lihat README
 
@@ -149,21 +148,16 @@ const GALLERY = [
 ];
 const LOVE_LETTER = `Selamat ulang tahun, sayangku. ♡
 
-Hari ini adalah hari lahir seseorang yang kehadirannya punya arti besar dalam hidupku. Aku harap di umur 19 tahun ini, kamu semakin dekat dengan semua hal baik yang kamu impikan. Semoga kamu selalu diberi kesehatan, hati yang tenang, keberanian untuk mencoba hal-hal baru, dan kekuatan saat hari-hari terasa tidak mudah.
+Selamat ulang tahun, rumah kecil bagi sebagian bahagiaku. Semoga di usia barumu, semesta lebih ramah kepadamu, doa-doamu menemukan jalannya, dan hatimu selalu punya alasan untuk bahagia. Maaf untuk segala kata dan sikapku yang pernah melukai hatimu; aku masih belajar mencintaimu dengan cara yang paling baik.
 
-Aku mungkin belum selalu jadi pasangan yang sempurna. Ada kalanya aku salah bicara, kurang peka, atau belum bisa memahami apa yang kamu rasakan. Tapi aku ingin terus belajar menjadi seseorang yang bisa kamu percaya, tempat kamu bercerita tanpa takut dihakimi, dan seseorang yang tetap berusaha ada saat kamu membutuhkan dukungan.
+Jika Tuhan mengizinkan, aku ingin menjadi seseorang yang tetap ada di setiap pertambahan usiamu, yang menyaksikan mimpimu tumbuh, menggenggam tanganmu saat dunia terasa berat, dan merayakan hal-hal kecil yang membuatmu bahagia. Sebab, dari sekian banyak hal indah yang ingin kumiliki, salah satunya adalah kesempatan untuk mencintaimu lebih lama.
 
-Terima kasih karena sudah menjadi bagian dari hari-hariku. Terima kasih untuk tawa, cerita, perhatian kecil, waktu yang kamu luangkan, dan semua kenangan yang mungkin terlihat biasa bagi orang lain tetapi berarti banyak buatku. Aku suka bagaimana hal sederhana bisa terasa istimewa ketika aku menjalaninya bersamamu.
+Maaf untuk setiap perkataan dan sikapku yang pernah membuatmu sakit hati. Maaf jika caraku menyayangimu belum selalu menjadi hal yang menenangkan. Aku memang masih banyak kurangnya, tetapi aku ingin terus belajar menjadi seseorang yang lebih baik dalam menjaga hati dan menghargai keberadaanmu.
 
-Di umur yang baru ini, jangan lupa berbaik hati kepada dirimu sendiri. Kamu tidak harus selalu kuat, tidak harus selalu punya jawaban, dan tidak harus membandingkan perjalananmu dengan siapa pun. Pelan-pelan saja. Aku akan ikut bahagia melihatmu tumbuh, mencoba, belajar, dan menemukan hal-hal yang membuatmu merasa hidup.
+Dan di antara semua doa yang kutitipkan kepada Tuhan malam ini, ada satu rasa yang tak pernah benar-benar selesai: rinduku kepadamu. Semoga jarak segera lelah memisahkan kita, sebab ada peluk yang masih kusimpan untukmu, dan ada hati yang selalu ingin pulang ke hadapanmu.
 
-Untuk hubungan kita, aku berharap kita terus memilih untuk saling mendengar, jujur, menghargai, dan memperbaiki keadaan saat ada yang tidak baik-baik saja. Aku tidak bisa menjanjikan bahwa setiap hari akan mudah, tetapi aku ingin menjalani hari-hari itu dengan komunikasi, usaha, dan kasih sayang yang nyata.
-
-Semoga ulang tahun ini menjadi awal dari banyak hal baik. Semoga harapan yang kamu simpan satu per satu menemukan jalannya. Dan semoga nanti, ketika kita melihat kembali foto-foto ini, kita bisa tersenyum karena ternyata kita sudah melewati begitu banyak hal bersama.
-
-Happy 19th birthday, my love. Teruslah jadi dirimu sendiri—seseorang yang berharga, yang layak dicintai, dan yang pantas mendapatkan hal-hal baik. Aku bersyukur bisa mengenalmu dan menjadi bagian dari ceritamu.
-
-I love you, today and in all the little tomorrows. ♡`;
+Dengan segenap cinta yang masih terus belajar menjadi lebih baik,
+dari Fahmil, yang selalu punya namamu dalam doa dan rindunya. ❤️`;
 document.getElementById("herNameHero").textContent = HER_NAME;
 document.getElementById("myNameSign").textContent = MY_NAME;
 document.getElementById("letterText").textContent = LOVE_LETTER;
